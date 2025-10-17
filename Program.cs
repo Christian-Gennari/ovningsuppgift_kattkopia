@@ -1,56 +1,60 @@
-﻿// See https://aka.ms/new-console-template for more information
-class Program
+﻿class Program
 {
     static int Main(string[] args)
     {
-        switch (args.Length)
+        if (args.Length == 0)
         {
-            case 0:
-                Console.WriteLine("Användning:");
-                Console.WriteLine("  -h, --help       Visa denna hjälptext.");
-                Console.WriteLine("  -v, --version    Visa programversion.");
-                Console.WriteLine("  <fil1> [fil2 ...]  Visa innehållet i angivna filer.");
+            Console.WriteLine("Användning:");
+            Console.WriteLine("  -h, --help       Visa denna hjälptext.");
+            Console.WriteLine("  -v, --version    Visa programversion.");
+            Console.WriteLine("  <fil1> [fil2 ...]  Visa innehållet i angivna filer.");
+            return 0;
+        }
+
+        switch (args[0])
+        {
+            case "-h":
+            case "--help":
+                Console.WriteLine("Visar denna hjälptext.");
                 return 0;
-                ;
-            case 1:
-                if (args[0] == "-h" || args[0] == "--help")
-                {
-                    Console.WriteLine("Visa denna hjälptext.");
-                    return 0;
-                }
-                else if (args[0] == "-v" || args[0] == "--version")
-                {
-                    Console.WriteLine("Version 1.0.0");
-                    return 0;
-                }
-                else
-                {
-                    PrintFileContent(args);
-                }
+
+            case "-v":
+            case "--version":
+                Console.WriteLine("Version 1.0.0");
                 return 0;
             default:
                 PrintFileContent(args);
                 break;
         }
+        return 0;
+    }
 
-        static int PrintFileContent(string[] args)
+    static int PrintFileContent(string[] args)
+    {
+        var errorFiles = new List<string>();
+        foreach (string arg in args)
         {
-            foreach (string arg in args)
+            if (File.Exists(arg))
             {
-                if (File.Exists(arg))
-                {
-                    string content = File.ReadAllText(arg);
-                    Console.WriteLine($"Content of {arg}:\n{content}");
-                }
-                else
-                {
-                    Console.WriteLine($"File not found: {arg}");
-                    return 1;
-                }
+                string content = File.ReadAllText(arg);
+                Console.WriteLine($"CONTENT OF {arg}:\n{content}");
             }
-
-            return 0;
+            else
+            {
+                errorFiles.Add(arg);
+            }
+            System.Console.WriteLine("----------------------------------------");
         }
+        if (errorFiles.Count > 0)
+        {
+            Console.WriteLine("Följande filer kunde inte hittas:");
+            foreach (var file in errorFiles)
+            {
+                Console.WriteLine(file);
+            }
+            return 1;
+        }
+
         return 0;
     }
 }
