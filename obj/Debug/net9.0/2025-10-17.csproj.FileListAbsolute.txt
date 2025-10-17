@@ -1,0 +1,14 @@
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\bin\Debug\net9.0\2025-10-17.exe
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\bin\Debug\net9.0\2025-10-17.deps.json
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\bin\Debug\net9.0\2025-10-17.runtimeconfig.json
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\bin\Debug\net9.0\2025-10-17.dll
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\bin\Debug\net9.0\2025-10-17.pdb
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\obj\Debug\net9.0\2025-10-17.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\obj\Debug\net9.0\2025-10-17.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\obj\Debug\net9.0\2025-10-17.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\obj\Debug\net9.0\2025-10-17.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\obj\Debug\net9.0\2025-10-17.dll
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\obj\Debug\net9.0\refint\2025-10-17.dll
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\obj\Debug\net9.0\2025-10-17.pdb
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\obj\Debug\net9.0\2025-10-17.genruntimeconfig.cache
+C:\Users\LENOVO\Desktop\Objektorienterad Programmering med C# & .NET\2025-10-17\obj\Debug\net9.0\ref\2025-10-17.dll
