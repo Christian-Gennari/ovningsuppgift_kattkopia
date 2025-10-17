@@ -37,7 +37,7 @@
             if (File.Exists(arg))
             {
                 string content = File.ReadAllText(arg);
-                Console.WriteLine($"CONTENT OF {arg}:\n{content}");
+                Console.WriteLine($"CONTENT OF [{arg}]:\n\n\x1B[3m{content}\x1B[0m");
             }
             else
             {
@@ -47,11 +47,15 @@
         }
         if (errorFiles.Count > 0)
         {
-            Console.WriteLine("Följande filer kunde inte hittas:");
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("FÖLJANDE FILER KUNDE INTE HITTAS:");
+            System.Console.WriteLine();
             foreach (var file in errorFiles)
             {
                 Console.WriteLine(file);
             }
+            Console.ResetColor();
             return 1;
         }
 
